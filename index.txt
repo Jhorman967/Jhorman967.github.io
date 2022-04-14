@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-Nav">
+            <nav>
+                <a href="#Hero">Home</a>
+                <a href="#About">About</a>
+                <a href="#Proyect">Porfolio</a>
+                <a href="#Contacs">Contact me</a>
+
+            </nav>
+        </div>
+        <div class="cont-hero" id="Hero">
+            <img src="assets/images/code-3337044_960_720.jpg" alt="Foto fondo">
+            <video src="assets/video/Todos deberían aprender a programar.mp4" controls></video>
+
+        </div>
+        <div class="cont-about" id="About">
+            <h1>It's me</h1>
+            <h2>Here someting about me</h2>
+            <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci 
+                luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. 
+                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. 
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, 
+                 ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                 Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci 
+                 luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. 
+                 Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. 
+                 Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, 
+                  ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+
+        </div>
+        <div class="cont-proyects" id="Proyect">
+            <H1>Proyect in developer</H1>
+            <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci 
+                luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. 
+                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. 
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, 
+                 ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+        </div>
+        <div class="cont-formularo" id="Contacs">
+            <h1>Contact</h1>
+            <form action="" class="formu">
+                
+                  <p>
+                    <label>Your Name</label><br>
+                    <input type="text" name="name" placeholder="Jhorman Gonzalez" required="" control-id="ControlID-1">
+                  </p>
+                  <p>
+                    <label>Your Email</label><br>
+                    <input type="email" name="Email" placeholder="example@email.com" required="" control-id="ControlID-2">
+                  </p>
+                  <p>
+                    <label>Subject</label><br>
+                    <input type="text" name="subject" placeholder="Description about message" required="" control-id="ControlID-3">
+                  </p>
+                  <p>
+                    <label>Message</label>
+                    <input type="text" name="Message" placeholder="Here Write your message" required="" control-id="ControlID-4">
+                  </p>
+                  <p>
+                      <button control-id="ControlID-5">Send</button>
+                      <button type="reset" control-id="ControlID-6">Reset Form</button>
+                  </p>
+
+            </form>
+
+
+        </div>
+
+        <div>
+            <footer>
+                <p>Copyright by Jhorman Gonzalez</p>
+            </footer>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
