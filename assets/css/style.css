@@ -4,24 +4,36 @@
     --very-orange: #F66B0E;
     --text-input-field: #EFEFEF;
     --blue: #205375;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
+    --sm: 18px;
+    --md: 20px;
+    --lg: 22px;
   }
   body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
   }
 
-  .container-Nav{
+  .container{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+  }
+  
+  /* .container-Nav {
+    display: flex;
+    flex-direction: row-reverse ;
+  } */
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 24px;
     border-bottom: 1px solid var(--blue);
-  }
+    background-color: var(--black);
 
+  }
   
-  .navbar-right ul {
+ .navbar-left a, .navbar-right ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -29,21 +41,38 @@
     align-items: center;
     height: 60px;
 
-  } 
+  }  
 
-  .navbar-right ul li a{
+  .navbar-right ul li{
+   margin-top: 20px;
+   /* mejorar */
+
+  }
+
+
+
+
+  .navbar-left{
+    display: flex;
+  }
+  .navbar-left a {
     text-decoration: none;
     color: var(--blue);
-    border: 1px solid var(--white);
+  }
+
+   .navbar-left a,.navbar-right ul li a{
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--black);
     padding: 8px;
     border-radius: 8px;
   }
-  .navbar-right ul li a:hover{
+ .navbar-right ul li a:hover{
     text-decoration: none;
     color: var(--blue);
     border: 1px solid var(--very-orange);
     color: var(--very-orange);
-  }
+  } 
 
 
   /* Agregar icono burguer para el futuro */
@@ -53,4 +82,124 @@
    
   }
 
+  /* HERO*/
 
+
+  
+
+  section#Hero{
+    /* display: flex;
+    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px; 
+    width: 100%; 
+    background: url( "../images/code-3337044_960_720.jpg") center;
+    background-size: cover;
+    
+    
+  }
+  
+  section#Hero::before{
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 5em;;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 500px;
+    
+  }
+
+  #hero .cont-hero {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cont-hero video{
+    margin: 0%;
+    padding: 0%;
+    border: 2px 0px 2px 0px;
+    /* position: absolute;
+    z-index: 4; */
+    height: 50%;
+    width: 50%;
+  }
+
+  .cont-hero .title{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  
+    position: absolute;
+    z-index: 3;
+    
+    width: 500px;
+    left: 50%;
+    margin-left: -160px;
+
+  }
+
+/* class cont about */
+
+.cont-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em;
+  margin: 2%;
+}
+
+.cont-about h2{
+  align-self: flex-start;
+}
+
+/*Proyecct*/
+
+.cont-proyects {
+
+  background-color: var(--blue);
+}
+
+.cont-proyects div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em;
+  margin: 2%;
+}
+
+.cont-proyects div h1{
+  color: var(--white);
+}
+
+.cont-proyects p {
+  color: var(--white);
+}
+
+.cont-formularo {
+  background-color: var(--black);
+}
+
+.cont-formularo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em;
+  margin: 2%;
+}
+
+.cont-formularo H1{
+  color: var(--text-input-field);
+  font-size: var(--lg);
+}
+.cont-formularo div p {
+  color: var(--text-input-field);
+}
